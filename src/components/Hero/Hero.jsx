@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from "../Header/Header";
 import './Hero.css'
+import NumberCounter from 'number-counter'
 const Hero = () => {
   return (
     <div className="hero">
@@ -32,15 +33,20 @@ const Hero = () => {
         {/*figures*/}
         <div className="figures">
           <div>
-            <span>+100</span>
+            <span>
+              <NumberCounter end={100} delay='4' prefix="+"></NumberCounter></span>
             <span>professional coaches</span>
           </div>
           <div>
-            <span>+900</span>
+            <span>
+            <NumberCounter end={900} delay='4' prefix="+"></NumberCounter>
+            </span>
             <span>members</span>
           </div>
           <div>
-            <span>+48</span>
+            <span>              
+              <NumberCounter end={48} delay='4' prefix="+"></NumberCounter>
+              </span>
             <span>fitness programs</span>
           </div>
 
